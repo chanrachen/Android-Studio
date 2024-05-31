@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tranfer">
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/buttonBackA"
+        android:background="@drawable/circle"
+        android:text="Back"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/well"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBackA"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Transfer Money"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/well"
+        android:layout_marginTop="10dp"
+        android:layout_height="150dp"
+        android:src="@drawable/q1"
+        android:id="@+id/tranMoney"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        android:text="Account Transfer"
+        android:layout_below="@+id/tranMoney"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter your ID"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edEmail"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:text="To Account"
+        android:layout_below="@+id/edEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter transfer's ID"
+        android:layout_below="@+id/tvPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <TextView
+        android:id="@+id/btntran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Amount"
+        android:layout_below="@+id/edPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/btnAmount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Amount"
+        android:layout_below="@+id/btntran"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/tran"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnAmount"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/circle"
+        android:text="tranfer"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

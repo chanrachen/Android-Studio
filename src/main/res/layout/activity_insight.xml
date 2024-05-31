@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tranfer">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/buttonBackA"
+        android:background="@drawable/circle"
+        android:text="Back"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/well"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBackA"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Insight"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_below="@id/well"
+        android:layout_marginTop="30dp"
+        android:layout_height="350dp"
+        android:src="@drawable/w2"
+        android:id="@+id/tranMoney"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="-6dp"
+        />
+    <TextView
+        android:id="@+id/amountD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tranMoney"
+        android:layout_marginTop="5dp"
+        android:text="TOTAL AMOUNT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amountD"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="$ 82,356,000"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/circle"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".create_account">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:src="@drawable/logo"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUrAccount"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logo"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Create Your Account"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:text="Name"
+        android:layout_below="@+id/tvUrAccount"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="ex: jon smith"
+        android:layout_below="@+id/tvName"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edName"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        android:text="Email"
+        android:layout_below="@+id/edName"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="ex: jon.smith@gmail.com"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edEmail"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:text="Password"
+        android:layout_below="@+id/edEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="*************"
+        android:layout_below="@+id/tvPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCfPassword"
+        android:text="Confirm Password"
+        android:layout_below="@+id/edPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="*************"
+        android:layout_below="@+id/tvCfPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edCfPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/tvCfPassword"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edCfPassword"
+        android:text="I understand the                                ."
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="terms and policy"
+        android:layout_below="@+id/edCfPassword"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/green"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        android:text="Sign Up"
+        android:layout_below="@+id/edCfPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/circle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:text="or sign up with"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/signUpWith"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/google"
+        android:layout_below="@id/signUpWith"
+        android:layout_marginTop="10dp"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/twitter"
+        android:layout_below="@id/signUpWith"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="-200dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/signUpWith"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-200dp"
+        android:src="@drawable/facebook" />
+
+</RelativeLayout>

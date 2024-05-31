@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".login">
+
+    <!-- Login Title TextView -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:src="@drawable/logo"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/lbTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Username TextView -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEmail"
+        android:text="Email"
+        android:layout_below="@+id/lbTitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="ex: jon.smith@gmail.com"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edEmail"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPassword"
+        android:text="Password"
+        android:layout_below="@+id/edEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="*************"
+        android:layout_below="@+id/tvPassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:id="@+id/edPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <!-- Login Button -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edPassword"
+        android:text="Create new                                ."
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="5dp"
+
+        />
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account."
+        android:layout_below="@id/edPassword"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/green"
+        android:onClick="create_acc"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login3"
+        android:text="Login"
+        android:layout_below="@+id/account"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

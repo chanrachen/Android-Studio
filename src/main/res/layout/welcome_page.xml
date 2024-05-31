@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".welcome_page">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/logo2"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/well"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo2"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Wellcome to Fiverr"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/green"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login2"
+        android:text="Sigup"
+        android:layout_below="@id/well"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="50dp"
+       android:background="@drawable/circle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/sigup"
+        android:text="Login"
+        android:layout_below="@id/login2"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+
+
+
+
+</RelativeLayout>
